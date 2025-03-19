@@ -1,0 +1,163 @@
+.about {
+  width: 100%;
+  background-color: #000;
+  z-index: 2;
+  margin-top: 410px;
+  position: relative;
+  padding-bottom: 200px;
+}
+.about-cont {
+  margin-top: 70px;
+  padding: 60px 0 0 0;
+}
+
+.about-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 315px;
+  padding: 20px 0px;
+  border-radius: 50%;
+}
+
+.about-img img {
+  width: 112%;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 650px;
+  color: white;
+  padding: 70px 0 0 0;
+}
+.about-p {
+  margin: 20px 0 0 0;
+}
+.about-p p {
+  line-height: 25px;
+text-align: justify;
+}
+.about-list-skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 0;
+  width: 300px;
+}
+
+.about-list-item {
+  display: flex;
+  padding: 20px 0 0 0;
+}
+
+.about-list-item h5 {
+  color: var(--main-green);
+}
+.download-btn {
+  text-decoration: none;
+  height: 30px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: var(--main-white);
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid var(--main-green);
+  transition: all 0.3s;
+
+  box-shadow: inset 200px 0 0 0 var(--main-green);
+}
+.download-btn:hover {
+  background: transparent;
+  color: var(--main-white);
+  box-shadow: inset 0px 0 0 0 var(--main-green);
+}
+.dot {
+  padding: 0 10px;
+}
+.about-btn {
+  margin: 45px 0 0 0;
+  cursor: pointer;
+}
+.skills-wrapper {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+}
+.skills-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 0;
+}
+.skills-items {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0 0 0;
+}
+.skill {
+  padding: 0 10px;
+  color: var(--main-green);
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.skill:hover {
+  color: #fff;
+}
+.name-colon {
+  margin-left: 13px;
+  margin-right: 16px;
+}
+.age-colon {
+  margin-left: 27px;
+  margin-right: 18px;
+}
+.adress-colon {
+  margin-left: 9px;
+  margin-right: 13px;
+}
+.phone-colon {
+  margin-left: 11px;
+  margin-right: 13px;
+}
+.email-colon {
+  margin-left: 15px;
+  margin-right: 13px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 998px) {
+  .about-text {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .about-img {
+    width: 250px;
+    padding: 0px;
+  }
+}

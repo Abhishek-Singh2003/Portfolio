@@ -1,0 +1,574 @@
+.contact {
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(1, 58, 20, 0.45)),
+    url("https://images.pexels.com/photos/4665064/pexels-photo-4665064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+}
+.contact-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-title-span {
+  color: var(--main-green);
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 0 0 0;
+}
+.contact-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact-title h1 {
+  color: var(--main-white);
+}
+
+.right-side {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 38rem;
+}
+.socials-title {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  border-radius: 20px;
+}
+.socials-title h2 {
+  color: var(--main-white);
+  animation: opacityminus 2s forwards;
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 2px solid var(--main-green);
+  padding: 20px 0;
+}
+
+.sircles-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: top;
+  position: relative;
+}
+
+.sircle1 {
+  width: 220px;
+  height: 220px;
+  margin-top: 40px;
+  border: 2px solid var(--main-green);
+  animation: moveColor 1.5s forwards infinite;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: move 15s forwards infinite;
+  transition: all 2s;
+  background-color: #000;
+}
+
+.sircle2 {
+  width: 170px;
+  height: 170px;
+  border: 2px solid var(--main-green);
+  animation: moveColor 1.5s forwards infinite;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sircle3 {
+  width: 110px;
+  height: 110px;
+  border: 2px solid var(--main-green);
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  animation: moveLeft 14s forwards infinite;
+}
+
+.sircle4 {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--main-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: moveColor 1.5s forwards infinite;
+}
+
+.github-icon1 {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  cursor: pointer;
+  top: -3.7%;
+  animation: moveicon 5s forwards infinite;
+}
+.github {
+  width: 20px;
+  height: 20px;
+}
+
+.github-icon2 {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  cursor: pointer;
+  top: 97%;
+  animation: moveicon 5s forwards infinite;
+}
+
+.github-icon1:hover .github,
+.github-icon2:hover .github,
+.github-icon3:hover .github,
+.github-icon4:hover .github {
+  color: grey; /* Matches your existing GitHub hover color */
+}
+
+.linkedin-icon1:hover .linkedin,
+.linkedin-icon2:hover .linkedin {
+  color: rgb(0, 162, 255); /* Matches your existing LinkedIn hover color */
+}
+
+.fb-icon1:hover .fb,
+.fb-icon2:hover .fb,
+.fb-icon3:hover .fb,
+.fb-icon4:hover .fb {
+  color: rgb(0, 0, 216); /* Matches your existing Facebook hover color */
+}
+
+
+/* Center and fix the GitHub icon */
+.github-icon-center {
+  color: #fff;
+  width: 22px; /* Size to fit within sircle4 */
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+  cursor: pointer;
+  z-index: 10; /* Ensure it’s above other elements */
+  /* Explicitly disable any inherited animations */
+  animation: none !important;
+  transform-origin: center; /* Ensure transform is relative to its own center */
+}
+
+.github-icon-center .github {
+  width: 18px; /* Fit within the container */
+  height: 18px;
+}
+
+.github-icon-center:hover .github {
+  color: grey; /* Matches your existing GitHub hover color */
+}
+
+
+
+
+
+
+.github-icon3 {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: -4%;
+  animation: moveicon 5s forwards infinite;
+}
+
+.github-icon4 {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  right: -4%;
+  animation: moveicon 9s forwards infinite;
+}
+
+.linkedin-icon1 {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 27px;
+  position: absolute;
+  top: -5%;
+}
+.linkedin {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.linkedin-icon2 {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 27px;
+  position: absolute;
+  top: 95%;
+}
+
+.fb-icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 19px;
+  position: absolute;
+  right: 7%;
+  top: 15%;
+}
+
+.fb-icon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 19px;
+  position: absolute;
+  right: 9.7%;
+  top: 80%;
+}
+
+.fb-icon3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 19px;
+  position: absolute;
+  left: 13%;
+  top: 10%;
+}
+
+.fb-icon4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 19px;
+  position: absolute;
+  left: 9%;
+  top: 80%;
+}
+
+.socials {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all 2s;
+  opacity: 1;
+  cursor: pointer;
+  position: relative;
+  padding: 20px 0;
+}
+
+.github-link {
+  color: red;
+}
+.soc-icon {
+  font-size: 30px;
+  margin: 3px;
+  margin: 0 20px;
+  color: var(--main-white);
+  cursor: pointer !important;
+  z-index: 10;
+  position: relative;
+}
+.fb:hover {
+  color: rgb(0, 0, 216) !important;
+}
+.github {
+  font-size: 20px !important;
+  width: 40px !important;
+  height: 35px !important;
+}
+.github:hover {
+  color: grey;
+}
+.linkdin:hover {
+  color: rgb(0, 162, 255);
+}
+.email-phone-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.phone p {
+  font-size: 14px;
+  padding: 0 10px;
+  color: #fff;
+}
+.email {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.email p {
+  font-size: 14px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.phone-icon {
+  font-size: 25px !important;
+  color: var(--main-green);
+}
+.email-icon {
+  font-size: 23px !important;
+  color: var(--main-green);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityminus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(80deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  30% {
+    transform: rotate(-80deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  70% {
+    transform: rotate(-200deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes moveicon {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  30% {
+    transform: rotate(-80deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  70% {
+    transform: rotate(-200deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes moveColor {
+  0% {
+    box-shadow: inset 0 0 10px 1px var(--main-green);
+  }
+  20% {
+    box-shadow: inset 0 0 40px 1px var(--main-green);
+  }
+  50% {
+    box-shadow: inset 0 0 50px 1px var(--main-green);
+  }
+  80% {
+    box-shadow: inset 0 0 40px 1px var(--main-green);
+  }
+  100% {
+    box-shadow: inset 0 0 30px 1px var(--main-green);
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .contact-wrapper {
+    justify-content: center;
+  }
+  .sircles-cont {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 523px) {
+  .socials-title h2 {
+    font-size: 20px;
+  }
+  .inputs {
+    width: 350px;
+  }
+  .sircle1 {
+    width: 210px;
+    height: 210px;
+  }
+  .sircle2 {
+    width: 180px;
+    height: 180px;
+  }
+  .sircle3 {
+    width: 110px;
+    height: 110px;
+  }
+
+  .sircle4 {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 347px) {
+  .socials-title h2 {
+    font-size: 20px;
+  }
+  .inputs {
+    width: 350px;
+  }
+  .sircle1 {
+    width: 180px;
+    height: 180px;
+  }
+  .sircle2 {
+    width: 150px;
+    height: 150px;
+  }
+  .sircle3 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sircle4 {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 533px) {
+  .right-side {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .socials-title {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1059px) {
+  .left-side {
+    width: 100%;
+  }
+}
